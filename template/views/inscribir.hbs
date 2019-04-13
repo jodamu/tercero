@@ -1,0 +1,35 @@
+{{>header}}
+
+<div class="container mb-4">
+    <div class="row">
+      <div class="col-md-12 jumbotron mt-4">
+        <h1>{{titulo}}</h1>        
+      </div>
+    </div>
+
+    <div class="row justify-content-md-center">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-body">
+            <form action="/inscribir" class="form-group" method="POST">
+              <div class="form-group">
+                <label for="doc_identidad">Documento de Indentidad</label>
+                <input type="text" readonly name="documento" value="{{documento}}" class="form-control" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="nombre_curso">Curso a inscribirse</label>
+                <select name="idcurso" class="form-control" required>
+                  {{{cursosInscribir listadoselect}}}
+                </select>
+              </div>              
+              <button type="submit" class="btn btn-primary btn-block">Inscribir</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+</div>
+
+{{>footer}}

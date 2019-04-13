@@ -1,0 +1,34 @@
+{{>header}}
+ <div class="container">
+    <h2>Bienvenido a la pagina</h2>
+    <br>
+    <p>Ingrese sus datos en el siguiente formulario</p>
+    {{{mensaje}}}
+    <form action="/actualizar" method="post">
+     <div class="form-group">
+       <label for="">Nombre:</label>
+       <input required type="text" readonly class="form-control" name="nombre" value="{{nombre}}" placeholder="Nombre esturiante">
+        <br>
+        <div class="row">
+          <div class="col-sm-4">
+            <label for="">Documento</label>
+            <input type="text" name="documento" value="{{documento}}" placeholder="">
+          </div>
+          <div class="col-sm-4">
+            <label for="">Correo</label>
+            <input type="text" name="correo" value="{{correo}}" placeholder="">
+          </div>
+          <div class="col-sm-4">
+            <label for="">Telefono</label>
+            <input type="text" name="telefono" value="{{telefono}}" placeholder="">
+          </div>
+        </div>
+        <br>
+
+        <button class="btn btn-dark">Guardar</button>
+       
+     </div>
+    </form>
+  </div>
+{{>footer}}
+

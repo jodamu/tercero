@@ -1,0 +1,43 @@
+{{>header}}
+
+  <div class="container p-3 my-4 bg-secondary text-white">
+    <h2>Bienvenido a la pagina</h2>
+    <br>
+    <p>Ingrese sus datos en el siguiente formulario</p>
+    <form action="/" method="post">
+     <div class="form-group">
+      <div class="row">
+        <div class="col-sm-4">
+            <label for="">Documento</label>
+            <input  class="form-control" type="text" name="documento" value="" placeholder="Documento identidad">
+          </div>
+
+        <div class="col-sm-4">
+       <label for="">Nombre:</label>
+       <input required type="text" class="form-control" name="nombre" placeholder="Nombre esturiante">
+        </div>
+
+       <div class="col-sm-4">
+         <label for="">Contraseña:</label>
+       <input required type="password" class="form-control" name="password" placeholder="Contraseña esturiante">
+        </div>
+        
+          
+          <div class="col-sm-4">
+            <label for="">correo</label>
+            <input  class="form-control" type="email" name="correo" value="" placeholder="Correo electronico">
+          </div>
+          <div class="col-sm-4">
+            <label for="">Telefono</label>
+            <input  class="form-control" type="text" name="telefono" value="" placeholder="">
+          </div>
+        </div>
+        <br>
+
+        <button class="btn btn-dark">Registrar</button>
+       
+     </div>
+    </form>
+  </div>
+
+{{>footer}}
